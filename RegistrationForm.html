@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        table
+        {
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            border: 1px solid black;
+        }
+        th,td
+        {
+            font-size: 20px;
+            padding:10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="Output.html">
+    <table border="1">
+        <tr><th colspan="2">Registration Form</th></tr>
+        <tr>
+            <td><label>Student Name</label></td><br>
+            <td><input type="text" name="student name" required></td>
+        </tr>
+        <tr>
+            <td><label>Father's Name</label></td><br>
+            <td><input type="text" name="Father's name" required></td>
+        </tr>
+        <tr>
+            <td><label>Mother's Name</label></td><br>
+            <td><input type="text" name="Mother's name" required></td>
+        </tr>
+        <tr>
+            <td><label>Date of Birth</label></td><br>
+            <td><input type="date" name="Date of Birth" required></td>
+        </tr>
+        <tr>
+            <td><label>Gender</label></td>
+            <td><input type="radio" name="Gender" value="Male" >Male
+            <input type="radio" name="Gender" value="Female" >Female</td><br>
+        </tr>
+        <tr>
+            <td><label>Email</label></td>
+            <td><input type="text" name="Email" required></td>
+        </tr>
+        <tr>
+            <td><label>Mobile Number</label></td>
+            <td><input type="number" name="Mobile number" required></td>
+        </tr>
+        <tr>
+            <td><label>Address</label></td>
+            <td><textarea rows="5" cols="20"></textarea></td>
+        </tr>
+        <tr>
+            <td><label>State</label></td>
+            <td> <input type="text" name="State"> </td>
+        </tr>
+        <tr>
+            <td><label>City</label></td>
+            <td> <input type="text" name="State"> </td>
+        </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="Submit"></td>
+      </tr>
+    </form>
+    </table>
+</body>
+</html>
