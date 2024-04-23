@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <style>
+      /*NavBar*/
+     .navbar
+     {
+        background-color: black;
+        height: 80px;
+        padding: 5px;
+     }
+     .navbar-brand
+     {
+        color: white;
+     }
+     .list
+     {
+      background-color: rgb(4, 7, 67);
+      height: 100px;
+      padding: 30px;
+     }
+     .list a
+     {
+      text-decoration:none;
+      color: white;
+      margin-left: 30px;
+     }
+
+     /*first container*/
+     .carousel img
+     {
+      width: 100%;
+      height: 300px;
+     }
+    /*Grid*/
+    .row img
+    {
+      height: 250px;
+       width: 250px;
+       padding: 10px;
+
+    }
+    .card
+    {
+      height: 450px;
+    }
+    .row{
+      display: flex;
+      background-color: rgb(244, 239, 239);
+    }
+    .row span a
+    {
+      background-color: white;
+    }
+    /*container*/
+    .container img
+    {
+      height: 200px;
+      width: 150px;
+      display: inline-block;
+      margin-left: 10px;
+      border: gray 5px;
+    }
+    /*Second carousel*/
+    div.scroll-container {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+div.scroll-container img {
+  padding: 10px;
+  height: 250px;
+  width: 250px;
+}
+/*Third Container*/
+.Third
+{
+  display: inline-block;
+}  
+.row a
+{
+  text-decoration: none;
+  background-color: brown;
+  padding: 7px;
+  border-radius: 50px;
+  color: white;
+}
+.card-header p a
+{  
+   color: white;
+   padding: 10px;
+   font-size: 25px;
+   text-decoration: none;
+}
+.card-header
+{
+  background-color: rgb(6, 80, 137);
+}
+.finalbar-card-body
+{
+  background-color: aqua;
+}
+</style>
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand">Shopping Site</a>
+            
+          <form class="d-flex">
+            <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                All
+              </a>
+            
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">All Categories</a></li>
+                <li><a class="dropdown-item" href="#">Apps & Games</a></li>
+                <li><a class="dropdown-item" href="#">Audible Audiobooks</a></li>
+                <li><a class="dropdown-item" href="#">Baby</a></li>
+                <li><a class="dropdown-item" href="#">Beauty</a></li>
+                <li><a class="dropdown-item" href="#">Books</a></li>
+                <li><a class="dropdown-item" href="#">Car & Motorbike</a></li>
+                <li><a class="dropdown-item" href="#">Clothing & Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Collectibles</a></li>
+                <li><a class="dropdown-item" href="#">Computers & Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Deals</a></li>
+              </ul>
+            </div>
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <nav class="list">
+        <a href="#">All</a>
+        <a href="#">Mobiles</a>
+        <a href="#">Electronics</a>
+        <a href="#">Fashion</a>
+        <a href="#">Home&Kitchen</a>
+        <a href="#">Today Deals</a>
+        <a href="#">Books</a>
+        <a href="#">Gift Cards</a>
+        <a href="#">VIP</a>
+        <a href="#">Sell</a>
+        <a href="#">Computers</a>
+        <a href="#">Tv</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Boys</a>
+        <a href="#">Girls</a>
+        <a href="#">Kids</a>
+        
+      </nav>
+      <!--first container-->
+      <nav class="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/OHL/Best/seller/store/new/March/PC_header_3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://images-eu.ssl-images-amazon.com/images/G/31/LA/AUMMER_STORE_PC.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="https://m.media-amazon.com/images/G/31/IMG20/Home/2023/HnKBanner/New/Cortina_3000x700._SX3000_QL85_.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </nav>
+      <!--Grid-->
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card">
+            <span><a href="https://www.amazon.in/iQOO-Storage-Snapdragon-Processor-44WFlashCharge/dp/B07WFNTGLL/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9._M3uuWCjazjgCTmeJY3-m9Xbp2vX3oF549FAoW4JFL8zOGvQOgbOcRMioghIxkyQYYxEwHux3nQQVSgqPdOPP2ISy0rX8M0FXkf6dpMzpaJXAUsy1wyfgNQZs_GgMH83q8wxjVjDmewczVRd6VzwyxQA9D2c1RsuOWaVaMzeluFZDrzjkdf8bBUOu1dk8YT5v0uhwGb-DJotm6cdG5AzDZARZpHNXknm2wI9uRbpiYUFp0A9AvzxqZ60feDN700Ps0rLYZFiV6A8pgg966vGSkzxXpvl2_oo3trIqG_o-nw.wf7lhD3-jHJwScGibqGSVn6XdBpFQW5CTg-C1v40RAg&dib_tag=se&keywords=iQOO%2BZ7s%2B5G%2Bby%2Bvivo&qid=1713528803&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"><img src="https://m.media-amazon.com/images/I/41bLD50sZSL._AC_SY200_.jpg"></a></span>
+            <div class="card-body">
+              <h5 class="card-title">iQOO Z7s 5G by vivo</h5>
+              <p class="card-text">iQOO Z7s 5G by vivo (Norway Blue, 6GB RAM, 128GB Storage) | Ultra Bright AMOLED Display | Snapdragon 695 5G 6nm Processor | 64 MP OIS Ultra Stable Camera | 44WFlashCharge</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <span><a href="#"><img src="https://m.media-amazon.com/images/I/512Poa0iMkL._AC_SY200_.jpg"></a></span>
+            <div class="card-body">
+              <h5 class="card-title">Homes Freestanding Storage</h5>
+              <p class="card-text">Urbanfry Homes Freestanding Storage Organizer Tower Rack Basket Shelf, Wooden 3-Tier Furniture Unit for Master/Guest Bathroom - Holds Bath Towels, Accessories, Soap - Rattan Collection - Natural</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <span><a href="#"><img src="https://m.media-amazon.com/images/I/31-TqE7SqjL._AC_SY200_.jpg"></a></span>
+            <div class="card-body">
+              <h5 class="card-title">Destinio Big Umbrella</h5>
+              <p class="card-text">Destinio Big Umbrella - Auto Open 54 inch Umbrella for Men with UV protection - Umbrella Big Size for Rain with rain cover, 3 Fold Large Umbrella</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <span><a href="#"><img src="https://m.media-amazon.com/images/I/41J+y0y6fhL._AC_SR400,600_.jpg"></a></span>
+            <div class="card-body">
+              <h5 class="card-title">Locker for Home & Office</h5>
+              <p class="card-text">Lifelong Locker for Home & Office 56L - Digital Safe for Security with Electronic Keypad- Safety for Jewellery, Money & other valuables - Tijori Box (1 Year Manufacturer's Warranty, Black)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+ <!--Second carousel-->
+ <div class="scroll-container">
+  <a href="#"><img src="https://m.media-amazon.com/images/I/71mPXWxxX0L._AC_SY200_.jpg" alt=""></a>
+  <a href="#"><img src="https://m.media-amazon.com/images/I/71cMb62tKHL._AC_SY200_.jpg" alt=""></a>
+  <a href="#"><img src="https://m.media-amazon.com/images/I/61oylIQn9iL._AC_UF226,226_FMjpg_.jpg" alt=""></a>
+  <a href="#"><img src="https://m.media-amazon.com/images/I/41AjofyxOYL._AC_UF226,226_FMjpg_.jpg" alt=""></a>
+  <a href="#"><img src="https://m.media-amazon.com/images/I/31U9xPGOthL._AC_UF226,226_FMjpg_.jpg" alt=""></a>
+  <a href="#"><img src="https://m.media-amazon.com/images/I/51fuJQikrGL._AC_UF226,226_FMjpg_.jpg" alt=""></a>
+  <a href="#"><img src="https://m.media-amazon.com/images/I/91Ig93lOZdL._AC_UF226,226_FMjpg_.jpg" alt=""></a>
+  <a href="#"><img src="https://m.media-amazon.com/images/I/51IJAR1lEgL._AC_SY200_.jpg" alt=""></a>
+  <a href="#"><img src="https://m.media-amazon.com/images/I/81oMogWVggL._AC_SY200_.jpg" alt=""></a>
+  <a href="#"><img src="https://m.media-amazon.com/images/I/41Dr9I4x1EL._SX679_.jpg" alt=""></a>
+</div>
+<!--Fourth Container-->
+<nav class="carousel1">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Sports/EnFRevmap/Topbanner/New/new-banner-GIF-1500x300.gif" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</nav>
+<!--Third Container-->
+<div class="row">
+  <div class="col-sm-2">
+    <div class="card" style="width: 18rem;">
+      <img src="https://m.media-amazon.com/images/I/61aCRUbQucS._SL1500_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Luminous Inverter</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><h6>$12999</h6></li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Buy Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2">
+    <div class="card" style="width: 18rem;">
+      <img src="https://m.media-amazon.com/images/I/71rNmX4Q0uL._SX679_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Maharaja Whiteline AIR</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><h6>$12500</h6></li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-2">
+    <div class="card" style="width: 18rem;">
+      <img src="https://m.media-amazon.com/images/I/61Qj6E+-ekL._AC_SY200_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">SteelManic 5-in-1</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><h6>$16999</h6></li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Buy Now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-2">
+    <div class="card" style="width: 18rem;">
+      <img src="https://m.media-amazon.com/images/I/81Lwduxlw2L._SX679_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PHOOL LUXURY</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><h6>$29999</h6></li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Buy Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2">
+    <div class="card" style="width: 18rem;">
+      <img src="https://m.media-amazon.com/images/I/51uhp0zJa+L._SY300_SX300_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Bathroom Shelf</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><h6>$9999</h6></li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Buy Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-2">
+    <div class="card" style="width: 18rem;">
+      <img src="https://m.media-amazon.com/images/I/81SJV8c67WL._SY879_.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Lymio Casual Shirt</h5>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><h6>$89999</h6></li>
+      </ul>
+      <div class="card-body">
+        <a href="#" class="card-link">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Fifth Container-->
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Sports/April/GFD/Catingress/Live_now_PC.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://m.media-amazon.com/images/G/31/img22/pcacc/pc/Gaming._CB582224308_.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://m.media-amazon.com/images/G/31/img22/pc/acc/hed/Pc_acc_header_1242x450._CB611776472_.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!--Fifth Container-->
+<div class="finalbar">
+<div class="card text-center">
+  <div class="card-header">
+    <p class="final"><a href="#">Back to top</a></p>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Shopping Site</h5>
+    <p class="card-text">© 1996-2024, ShoppingSite.com, Inc. or its affiliates</p>
+    <a href="#" class="btn btn-primary">Register Now</a>
+    <a href="#" class="btn btn-primary">Login</a>
+  </div>
+</div>
+</div>
+</body>
+</html>
